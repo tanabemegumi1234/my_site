@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<header class="shadow-sm">
-  <div style="background-color: #EC715F">
-  <nav class="navbar navbar-expand-lg navbar-light">
-   <li class="nav-item">
-      <%= link_to "Portfolio", class: 'nav-link text-dark' %>
+<html>
+  <head>
+    <title>MySite</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <script src="https://kit.fontawesome.com/54b4c06cb9.js" crossorigin="anonymous"></script>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  
+  <!--#EC715F -->
+   <li>
+      <%= link_to "Portfolio" %>
     </li>
     <li>
       <%= link_to "Featu" %>
@@ -14,22 +24,8 @@
     <li>
       <%= link_to "Contact" %>
     </li>
-    </nav>
-    </div>
-</header>
-<html>
-  <head>
-    <title>MySite</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    
-    <script src="https://kit.fontawesome.com/54b4c06cb9.js" crossorigin="anonymous"></script>
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
   <body>
     <%= yield %>
+
   </body>
 </html>
