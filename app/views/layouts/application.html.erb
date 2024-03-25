@@ -5,27 +5,34 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
+
     <script src="https://kit.fontawesome.com/54b4c06cb9.js" crossorigin="anonymous"></script>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  
-  <!--#EC715F -->
-   <li>
-      <%= link_to "Portfolio" %>
-    </li>
-    <li>
-      <%= link_to "Featu" %>
-    </li>
-    <li>
-      <%= link_to "Profile" %>
-    </li>
-    <li>
-      <%= link_to "Contact" %>
-    </li>
-  <body>
+
+
+  <header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4" style="background-color: #EC715F;"><!--#EC715F -->
+        
+   
+        
+          <%= link_to "Portfolio"  %>
+        
+          <%= link_to "Featu" %>
+       
+          <%= link_to "Profile" %>
+        
+          <%= link_to "Contact" %>
+        
+      
+    
+      </div>
+    </div>
+  </div>
     <%= yield %>
 
-  </body>
+  </header>
 </html>
