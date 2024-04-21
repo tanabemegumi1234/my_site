@@ -27,3 +27,11 @@ header {
   padding: 10px 0;
   margin: 0 auto;
 }
+.main-visual {
+  width: 100%; /* 横幅いっぱい */
+  height: 300px; /* 高さ300px */
+}
+.main-visual-content {
+  width: 350px; /* 横幅350px */
+  height: 300px; /* 親の高さに揃える */
+}
