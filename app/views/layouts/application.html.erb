@@ -16,37 +16,22 @@
   　<!--ロゴ -->
   </header>
    <nav>
-  <!--<div class="container"> -->
-     <!--<div class="row"> -->
-       <!--<div class="col-lg-4" style="background-color: #EC715F;"><!--#EC715F -->
-        <h1 class="header"> 
-         <ul class="nav-list">
-          <li class="nav-list-item">
-          
+  <div class="container">
+ <div class="row">
+       <div class="col-lg-4" style="background-color: #EC715F;"><!--#EC715F -->
         
           <%= link_to "Portfolio"  %>
-          </li>
-           </h1>
-        
-          <li class="nav-list-item"><%= link_to "Featu" %></li>
+
+          <%= link_to "Featu" %>
        
-          <li class="nav-list-item"><%= link_to "Profile" %></li>
+          <%= link_to "Profile" %>
         
-          <li class="nav-list-item"><%= link_to "Contact" %></li>
+          <%= link_to "Contact" %>
         
-      
-       </ul>
-       <!--<</div>-->
-     <!--<</div>-->
-   <!--<</div>-->
-    </nav>
-    <div class="main-visual">
-      <div class="main-visual-content"></div>
+   </div>
+  </div>
+</div>
     </div>
     <%= yield %>
 
-  
-  <footer>
-      <p class="footer-text">©︎ 2017 WebCamp</p>
-  </footer>
 </html>
