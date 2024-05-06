@@ -2,19 +2,19 @@
 <html lang="ja">
   <head>
     <title>MySite</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <script src="https://kit.fontawesome.com/54b4c06cb9.js" crossorigin="anonymous"></script>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-
+  <body>
   <header>
   　<!--ロゴ -->
-  </header>
+  
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand p-3">ロゴ</a>
@@ -36,5 +36,7 @@
    </div> 
   </div>
    </nav>
+   </header>
     <%= yield %>
+  </body>
 </html>
